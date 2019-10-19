@@ -10,17 +10,19 @@ Let’s get started with the most important thing when working with python: the 
 Pyenv will help you doing that!
 Pyenv is a set of three tools, from which I present two here, that are pyenv (used to install python) and pyenv-virtualenv (used to configure your global tools). You can install them by
 
-<code>curl https://pyenv.run | bash</code>
-After that, add the following lines to your .bashrc (same for .zshrc) to have pyenv available in your terminal
+<code>curl https://pyenv.run | bash</code><br>
+After that, add the following lines to your .bashrc (same for .zshrc) to have pyenv available in your terminal<br>
 <code>
 export PATH="~/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
-</code>
+</code><br>
 and finally, restart your terminal. Now, you can use pyenv to install almost any python interpreter, including pypy, and anaconda. Note, that pyenv builds python locally on your machine. Building python requires several libraries. On my Ubuntu machine, I have to install the following ones to not run into problems
+<p>
 <code>
 sudo apt-get install build-essential libsqlite3-dev sqlite3 bzip2 libbz2-dev zlib1g-dev libssl-dev openssl libgdbm-dev libgdbm-compat-dev liblzma-dev libreadline-dev libncursesw5-dev libffi-dev uuid-dev
 </code>
+</p>
 <br>
 <br>
 <source><a href="https://towardsdatascience.com/how-to-setup-an-awesome-python-environment-for-data-science-or-anything-else-35d358cc95d5">Setup an Awesome Python Environment for Data Science</a></source>
