@@ -12,10 +12,11 @@ Pyenv is a set of three tools, from which I present two here, that are pyenv (us
 
 <code>curl https://pyenv.run | bash</code><br>
 After that, add the following lines to your .bashrc (same for .zshrc) to have pyenv available in your terminal<br>
-<code>
+<code><p>
 export PATH="~/.pyenv/bin:$PATH"<br>
 eval "$(pyenv init -)"<br>
 eval "$(pyenv virtualenv-init -)"<br>
+  </p>
 </code><br>
 and finally, restart your terminal. Now, you can use pyenv to install almost any python interpreter, including pypy, and anaconda. Note, that pyenv builds python locally on your machine. Building python requires several libraries. On my Ubuntu machine, I have to install the following ones to not run into problems
 <p>
